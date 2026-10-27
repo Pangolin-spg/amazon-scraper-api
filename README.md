@@ -31,7 +31,7 @@ English | [简体中文](README.zh-CN.md)
 
 ## About
 
-**Pangolinfo Scrape API** is built by **PANGOLIN INFO TECH PTE. LTD.** (Singapore, founded in 2022) for cross-border sellers, data providers, and developers.
+**Pangolinfo Scraper API** is built by **PANGOLIN INFO TECH PTE. LTD.** (Singapore, founded in 2022) for cross-border sellers, data providers, and developers.
 
 The API collects **all public Amazon data**. It follows Amazon page changes and returns structured fields such as title, price, discount, availability, description, and reviews, as well as raw HTML or Markdown. You call it with an API token; the parsing logic is maintained on our side.
 
@@ -81,7 +81,7 @@ go mod tidy
 go test ./parsermgr/
 ```
 
-### 2. Scrape API
+### 2. Scraper API
 
 1. [Sign up](https://tool.pangolinfo.com/) for the Free plan (60 credits every month).
 2. Exchange your email and password for a token: `POST https://scrapeapi.pangolinfo.com/api/v1/auth`. See [Authentication](https://docs.pangolinfo.com/en-api-reference/authApi/authApi). [`examples/python/get_amazon_product_sync.py`](examples/python/get_amazon_product_sync.py) is a longer sign-in sample. The snippets below follow the current API reference: `format` is a string, and the task URL is `POST https://scrapeapi.pangolinfo.com/api/v1/scrape`.

@@ -31,7 +31,7 @@
 
 ## 项目简介
 
-**Pangolinfo Scrape API** 由 **PANGOLIN INFO TECH PTE. LTD.**（新加坡，成立于 2022 年）提供，面向跨境卖家、数据服务商和工具开发者。
+**Pangolinfo Scraper API** 由 **PANGOLIN INFO TECH PTE. LTD.**（新加坡，成立于 2022 年）提供，面向跨境卖家、数据服务商和工具开发者。
 
 接口覆盖 **全部 Amazon 公开数据**。页面结构变化时，解析逻辑由我们持续维护，可返回标题、价格、折扣、库存、描述、评论等结构化字段，也可返回原始 HTML 或 Markdown。使用 API token 即可调用。
 
@@ -81,7 +81,7 @@ go mod tidy
 go test ./parsermgr/
 ```
 
-### 2. Scrape API
+### 2. Scraper API
 
 1. 在 [tool.pangolinfo.com](https://tool.pangolinfo.com/) 注册免费计划（每月 60 credits）。
 2. 用邮箱和密码换 token：`POST https://scrapeapi.pangolinfo.com/api/v1/auth`。说明见[认证文档](https://docs.pangolinfo.com/cn-api-reference/authApi/authApi)。[`examples/python/get_amazon_product_sync.py`](examples/python/get_amazon_product_sync.py) 是更长的登录示例。下面的片段与当前 API 文档一致：`format` 为字符串，任务地址为 `POST https://scrapeapi.pangolinfo.com/api/v1/scrape`。
